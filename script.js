@@ -8,7 +8,10 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold:0.2 });
+}, { threshold: 0,  
+  rootMargin: '0px 0px -5% 0px'  
+ });
+
 document.querySelectorAll('.oculto').forEach(el => observer.observe(el));
 
 const form = document.querySelector('.formulario')
@@ -47,7 +50,7 @@ contactForm.addEventListener('submit', e=>{
 const setaTopo = document.querySelector('.seta-topo');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
+  if (window.scrollY > 50) {
     setaTopo.classList.add('mostrar');
   } else {
     setaTopo.classList.remove('mostrar');

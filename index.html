@@ -1,0 +1,169 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Líder Ar-Condicionado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    
+    <ul class="menu-header">
+      
+      <li><a href="#caixa-principal">Início</a></li>
+      <li><a href="#projetos">Nossos Serviços</a></li>
+      <li><a href="#clientes-satisfeitos">Clientes Satisfeitos</a></li>
+      <li><a href="#nossa-politica">Nossa Política</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  
+    <!-- Máscara de fundo ao exibir formulário -->
+  <div class="mascara-formulario" onclick="clickForm()"></div>
+
+  <!-- Conteúdo principal em grid -->
+  <div class="caixa-principal">
+    <div class="logo-esquerda">
+      <img class="logo-topo" src="./assets/logo-ar.png" alt="Logo Líder Ar">
+      <h1>Líder Ar-Condicionado ❄️</h1>
+      <button class="botao-entre-em-contato" onclick="mostrarForm(event)">Entre em Contato</button>
+    </div>
+
+    
+
+    <div class="video-direita">
+      <video src="./assets/videosite.mp4" autoplay muted loop></video>
+    </div>
+  </div>
+
+  <!-- Formulário oculto -->
+  <form class="formulario" id="form-contato" action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://seunome.github.io/meu-portfolio/obrigado.html">
+    <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+    <textarea name="duvida" id="duvida" placeholder="Descreva seu problema..." required></textarea>
+    <button type="submit" class="enviar-formulario">Enviar</button>
+  </form>
+
+<section id="projetos" class="section oculto">
+        <h6>Nossos Serviços</h6>
+        
+        <div class="projetos-container">
+            
+            <div class="projeto">
+               <img src="./assets/ar03.png" alt="img-inicio-do-site">
+                <h5>Instalção</h5>
+                <br/>
+                <p>Realizamos a instalação de ar-condicionado com segurança, rapidez e o cuidado que seu ambiente merece. Todos os serviços são executados por profissionais qualificados e dentro das normas técnicas exigidas, garantindo conforto e eficiência com total responsabilidade.
+
+</p>
+            </div>
+              
+            <div class="projeto">
+                
+                    <img src="./assets/ar01.png" alt="img-inicio-do-site">
+                    <h5>Manutenção & Higienização</h5>
+                    <br/>
+                    <p>Cuidar do seu ar-condicionado é essencial para garantir o bom funcionamento e a qualidade do ar que você respira. Realizamos a manutenção preventiva e a higienização completa, seguindo todas as normas técnicas, para aumentar a vida útil do aparelho e manter seu ambiente saudável e livre de impurezas.</p>
+            </div>
+
+             <div class="projeto">
+                
+                    <img src="./assets/eletrica.jpg" alt="img-inicio-do-site">
+                    <h5>Instalação Elétrica</h5>
+                    <br/>
+                    <p>Oferecemos serviços completos de instalação elétrica residencial, desde o planejamento até a finalização da obra. Trabalhamos com materiais de qualidade, seguindo todas as normas de segurança e exigências técnicas, garantindo um sistema elétrico eficiente, seguro e pronto para o seu dia a dia.</p>
+            </div>
+         
+        </div>
+    </section>
+
+
+  
+
+  <!-- Clientes satisfeitos -->
+  <section id="clientes-satisfeitos" class="clientes-satisfeitos oculto">
+    <h3>Clientes Satisfeitos</h3>
+    <div class="lista-clientes">
+      <div><img src="./assets/cliente01.jpg" alt><p>Open Mall</p></div>
+      <div><img src="./assets/cliente02.jpg" alt><p>Nissan - Rio Verde</p></div>
+      <div><img src="./assets/cliente03.jpg" alt><p>Celine Jóias</p></div>
+      <div><img src="./assets/cliente04.jpg" alt><p>Pousada Pirenópolis</p></div>
+    </div>
+  </section>
+
+  <!-- Política -->
+  <div id="nossa-politica" class="caixa-nossa-politica oculto">
+   
+    <div class="imagem-manutencao-esquerda">
+      <img src="./assets/img-manutencao.png" alt="Manutenção" class="imagem-manutencao">
+    </div>
+    <div class="paragrafo-manutencao-direita">
+       <h2>Nossa Política</h2>
+      <p class="paragrafo-final">
+       A implementação de políticas rigorosas para a instalação e manutenção de sistemas de
+                ar-condicionado é fundamental para assegurar a eficiência energética, a durabilidade dos equipamentos e a
+                saúde dos ocupantes dos ambientes climatizados. A Lei nº 13.589/2018 exige que edifícios de uso público e
+                coletivo mantenham um Plano de Manutenção, Operação e Controle (PMOC) dos sistemas de climatização, visando
+                à eliminação ou minimização de riscos potenciais à saúde dos ocupantes.
+      </p>
+    </div>
+  </div>
+
+  <section id="contato" class="formulario-contato">
+  <h2>Entre em Contato</h2>
+  <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST" class="form-box">
+
+    <input type="text" name="name" placeholder="Seu nome" required>
+    <input type="tel" name="phone" placeholder="Seu telefone" required>
+    <textarea name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+
+    <!-- Redirecionamento após envio -->
+    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+  <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 - Lider Ar </p>
+    
+    <div class="footer-links">
+      <a href="https://www.instagram.com/seu_perfil" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+      </a>
+
+      <a href="tel:+5562986303121">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Telefone" />
+      </a>
+
+      <a href="mailto:liderAr@gmail.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <!-- Botão WhatsApp flutuante -->
+  <a href="https://wa.me/5511999999999?text=Olá!" class="link-whatsapp" aria-label="WhatsApp">
+    <img src="./assets/whatsapp.png" alt="WhatsApp">
+  </a>
+
+<a href="#" class="seta-topo" title="Voltar ao topo">⬆</a>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -47,7 +47,7 @@ contactForm.addEventListener('submit', e=>{
 const setaTopo = document.querySelector('.seta-topo');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 200) {
     setaTopo.classList.add('mostrar');
   } else {
     setaTopo.classList.remove('mostrar');

@@ -41,6 +41,6 @@ Um dos principais desafios foi fazer com que o formulário de contato surgisse s
 
 ## 📸 Captura de Tela
 
-![Preview do Projeto](./caminho/para/screenshot.png)
+![Preview do Projeto](./assets/lider-ar.png)
 
 ---
